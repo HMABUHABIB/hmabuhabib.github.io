@@ -10,11 +10,32 @@
     />
 
     <!-- 1. Load the Google Places library -->
+<style>
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
 
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
   </head>
   <body>
     <!-- 2. Insert and input tag with a useful id -->
-    <h1>Welcome to my github account</h1>
+   <div class="loader"></div>
 
     <!-- 3. Use this script to call the Google Places API -->
 <script type="text/javascript"
